@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+    
+}
+
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(25, 30px);
+    grid-template-rows: repeat(15, 30px);
+    gap: 1px;
+    border: 1px solid #fff;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+}
+
+.Joueur {
+    background-color: #45a049;
+    content: url(img/player.png);
+}
+
+.monster {
+    background-color: red;
+    content: url(img/monster.png);
+}
+
+.tresor {
+    background-color: goldenrod;
+    content:url(img/argent.png);
+}
+
+.wall {
+    background-color: white;
+}
+
+.score {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#restart-btn:hover {
+    background-color: #45a049;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: gray;
+    color: white;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+
